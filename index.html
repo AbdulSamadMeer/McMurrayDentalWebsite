@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McMurray Dental Care | Compassionate Dental Care in McMurray, PA</title>
+  <meta name="description" content="McMurray Dental Care offers comprehensive dental services in McMurray, PA — from routine cleanings to dental implants, Invisalign, and emergency care. Schedule your appointment today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Tooth SVG used inline for logo */
+    .tooth-svg { fill: var(--white); }
+    .tooth-svg-dark { fill: var(--dark); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="McMurray Dental Care — home">
+        <div class="nav-logo-icon">
+          <svg class="tooth-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C9.24 2 7 3.79 6.16 6.3c-.6 1.78-.6 3.7-.16 6.2.55 3.1 1.46 5.92 2.5 7.08.38.43.76.67 1.27.4.62-.33 1.05-1.1 1.23-2.98.18 1.88.61 2.65 1.23 2.98.5.27.89.03 1.27-.4 1.04-1.16 1.95-3.98 2.5-7.08.44-2.5.44-4.42-.16-6.2C18 3.79 15.76 2 13 2h-1Z"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="name">McMurray Dental</span>
+          <span class="tagline">Care · McMurray, PA</span>
+        </div>
+      </a>
+
+      <!-- Desktop menu -->
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Desktop actions -->
+      <div class="nav-actions">
+        <a href="tel:7249424500" class="nav-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.06 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          724-942-4500
+        </a>
+        <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-dark">Request Appointment</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav class="nav-mobile" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <div class="nav-mobile-cta">
+        <a href="tel:7249424500" class="btn btn-outline">📞 724-942-4500</a>
+        <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-dark">Request Appointment</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-left">
+      <div class="hero-text">
+        <div class="hero-chip">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+          Comprehensive Dental Care
+        </div>
+        <h1 class="hero-h1" id="hero-heading">McMurray <em>Dental</em></h1>
+        <p class="hero-tagline">Care for your smile, crafted with compassion</p>
+        <p class="hero-desc">Comprehensive Dental Care — From Routine Cleanings to Emergency Services</p>
+        <div class="hero-actions">
+          <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-dark">Schedule Appointment</a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img
+        src="https://img.magnific.com/free-photo/handsome-man-smiling-happy-face-portrait-close-up_53876-145493.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="Happy patient with a bright, healthy smile at McMurray Dental Care"
+        loading="eager"
+      />
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" aria-labelledby="about-heading">
+    <div class="about-left">
+      <img
+        src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=800&q=80&auto=format&fit=crop"
+        alt="Dental professional performing a checkup at McMurray Dental Care"
+        loading="lazy"
+      />
+    </div>
+    <div class="about-right">
+      <h2 id="about-heading">Where Experience &amp; Compassion Come Together</h2>
+      <p>At McMurray Dental Care, we believe a healthy smile is the key to living well. Our team blends years of expertise with a genuine commitment to patient care, creating a welcoming environment where comfort comes first.</p>
+      <p>From routine checkups to personalized treatment plans, every visit is guided by compassion, precision, and your long-term oral health.</p>
+      <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-outline">Schedule Appointment</a>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="services-intro fade-up">
+      <h2 id="services-heading">Our Services</h2>
+      <p>Comprehensive care for every smile — from preventive visits to full smile transformations.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="srv-card fade-up" aria-label="Checkup and Cleaning">
+        <div class="srv-bg" style="background-image:url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1374&auto=format&fit=crop');"></div>
+        <div class="srv-overlay"></div>
+        <div class="srv-body">
+          <h3>Checkup &amp; Cleaning</h3>
+          <p class="srv-desc">Keep your teeth healthy and bright with regular dental checkups and professional cleanings. Prevent cavities, gum disease, and maintain long-term oral health.</p>
+          <a href="cleaning-and-prevention.html" class="srv-link">View More</a>
+        </div>
+      </article>
+
+      <article class="srv-card fade-up" aria-label="Cosmetic Procedures">
+        <div class="srv-bg" style="background-image:url('https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=800&q=80');"></div>
+        <div class="srv-overlay"></div>
+        <div class="srv-body">
+          <h3>Cosmetic Procedures</h3>
+          <p class="srv-desc">Enhance your smile with cosmetic dentistry including teeth whitening, veneers, and bonding. Achieve a confident, natural-looking smile you'll love to share.</p>
+          <a href="cosmetic-dentistry.html" class="srv-link">View More</a>
+        </div>
+      </article>
+
+      <article class="srv-card fade-up" aria-label="Restorative Procedures">
+        <div class="srv-bg" style="background-image:url('https://plus.unsplash.com/premium_photo-1661632367604-13ec9761f177?q=80&w=687&auto=format&fit=crop');"></div>
+        <div class="srv-overlay"></div>
+        <div class="srv-body">
+          <h3>Restorative Procedures</h3>
+          <p class="srv-desc">Restore strength and function to damaged or missing teeth with crowns, bridges, and fillings. Our restorative dentistry ensures comfort and lasting results.</p>
+          <a href="restorative-dentistry.html" class="srv-link">View More</a>
+        </div>
+      </article>
+
+      <article class="srv-card fade-up" aria-label="Dental Implants">
+        <div class="srv-bg" style="background-image:url('https://images.unsplash.com/photo-1593022356769-11f762e25ed9?q=80&w=1470&auto=format&fit=crop');"></div>
+        <div class="srv-overlay"></div>
+        <div class="srv-body">
+          <h3>Dental Implants</h3>
+          <p class="srv-desc">Replace missing teeth with durable, natural-looking dental implants. Enjoy restored confidence, comfort, and function for a lifelong healthy smile.</p>
+          <a href="dental-implants.html" class="srv-link">View More</a>
+        </div>
+      </article>
+
+      <article class="srv-card fade-up" aria-label="Oral Surgery">
+        <div class="srv-bg" style="background-image:url('https://images.unsplash.com/photo-1606811951341-756fdd437682?q=80&w=1374&auto=format&fit=crop');"></div>
+        <div class="srv-overlay"></div>
+        <div class="srv-body">
+          <h3>Oral Surgery</h3>
+          <p class="srv-desc">Expert oral surgery procedures performed with precision and care. From extractions to other surgical treatments, we ensure your comfort and safety every step of the way.</p>
+          <a href="oral-surgery.html" class="srv-link">View More</a>
+        </div>
+      </article>
+
+      <article class="srv-card fade-up" aria-label="Dentures">
+        <div class="srv-bg" style="background-image:url('https://images.unsplash.com/photo-1620775997990-ee3c25938b4c?q=80&w=1470&auto=format&fit=crop');"></div>
+        <div class="srv-overlay"></div>
+        <div class="srv-body">
+          <h3>Dentures</h3>
+          <p class="srv-desc">Custom dentures designed for a natural fit and improved function. Eat, speak, and smile with confidence again.</p>
+          <a href="dentures.html" class="srv-link">View More</a>
+        </div>
+      </article>
+
+      <article class="srv-card fade-up" aria-label="Children's Dental Care">
+        <div class="srv-bg" style="background-image:url('https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?q=80&w=1470&auto=format&fit=crop');"></div>
+        <div class="srv-overlay"></div>
+        <div class="srv-body">
+          <h3>Children's Dental Care</h3>
+          <p class="srv-desc">We're happy to see children in our office for routine dental care and cleanings. Our team ensures visits are gentle and stress-free.</p>
+          <a href="pediatric-dentistry.html" class="srv-link">View More</a>
+        </div>
+      </article>
+
+    </div><!-- /services-grid -->
+
+    <div class="services-footer fade-up">
+      <a href="services.html" class="btn btn-dark">View All Services</a>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" aria-labelledby="testimonials-heading">
+    <div class="testimonials-header fade-up">
+      <h2 id="testimonials-heading">What Our Patients Say</h2>
+      <p>Real stories from real smiles in McMurray, PA</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="t-card fade-up">
+        <div class="t-stars" aria-label="5 stars">★★★★★</div>
+        <p class="t-text">"The team at McMurray Dental is incredible — they genuinely care about their patients. My whole family comes here and we wouldn't go anywhere else."</p>
+        <div class="t-author">
+          <div class="t-avatar" aria-hidden="true">SM</div>
+          <div>
+            <div class="t-name">Sarah M.</div>
+            <div class="t-loc">McMurray, PA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card fade-up">
+        <div class="t-stars" aria-label="5 stars">★★★★★</div>
+        <p class="t-text">"Best dental care I've ever received. They explained every step and made me feel completely at ease. My implants look and feel completely natural."</p>
+        <div class="t-author">
+          <div class="t-avatar" aria-hidden="true">JD</div>
+          <div>
+            <div class="t-name">John D.</div>
+            <div class="t-loc">Canonsburg, PA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card fade-up">
+        <div class="t-stars" aria-label="5 stars">★★★★★</div>
+        <p class="t-text">"I was terrified of the dentist before I came here. The entire staff is so gentle and professional. Highly recommend to anyone in the area!"</p>
+        <div class="t-author">
+          <div class="t-avatar" aria-hidden="true">ER</div>
+          <div>
+            <div class="t-name">Emily R.</div>
+            <div class="t-loc">Peters Township, PA</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== LOCATION ===== -->
+  <section class="location" aria-labelledby="location-heading">
+    <div class="location-map">
+      <iframe
+        src="https://maps.google.com/maps?q=4198+Washington+Rd+%234+McMurray+PA+15317&z=15&output=embed"
+        loading="lazy"
+        title="McMurray Dental Care map — 4198 Washington Rd #4, McMurray PA 15317"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="location-info">
+      <h2 id="location-heading">Serving McMurray PA With a <em>Smile</em></h2>
+      <div class="info-blocks">
+
+        <div class="info-block">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="info-label">Address</p>
+            <p class="info-value">
+              <a href="https://maps.app.goo.gl/44t8cNcs267HqmYa7" target="_blank" rel="noopener">
+                4198 Washington Rd, Suite #4<br>McMurray, PA 15317
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <p class="info-label">Hours</p>
+            <p class="info-value">
+              Monday – Friday: 8AM – 5PM<br>
+              Second Saturday of each month:<br>9AM – 4PM or by appointment
+            </p>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.06 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="info-label">Phone</p>
+            <p class="info-value"><a href="tel:7249424500">724-942-4500</a></p>
+          </div>
+        </div>
+
+      </div><!-- /info-blocks -->
+      <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-outline">Schedule Appointment</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-main">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="f-logo">
+          <div class="f-logo-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path class="tooth-svg-dark" d="M12 2C9.24 2 7 3.79 6.16 6.3c-.6 1.78-.6 3.7-.16 6.2.55 3.1 1.46 5.92 2.5 7.08.38.43.76.67 1.27.4.62-.33 1.05-1.1 1.23-2.98.18 1.88.61 2.65 1.23 2.98.5.27.89.03 1.27-.4 1.04-1.16 1.95-3.98 2.5-7.08.44-2.5.44-4.42-.16-6.2C18 3.79 15.76 2 13 2h-1Z"/>
+            </svg>
+          </div>
+          <div class="f-logo-text">
+            <span class="name">McMurray Dental</span>
+            <span class="care">Care</span>
+          </div>
+        </div>
+        <p>Compassionate, comprehensive dental care for the whole family in McMurray, PA.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <!-- Google -->
+          <a href="#" aria-label="Google Reviews" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 12.2c0-.6-.1-1.2-.2-1.8H12v3.4h4.7c-.2 1.1-.9 2-1.8 2.6v2.2h3c1.7-1.6 2.7-4 2.4-6.4z"/><path d="M12 21c2.4 0 4.4-.8 5.9-2.1l-3-2.2c-.8.5-1.8.8-2.9.8-2.2 0-4.1-1.5-4.8-3.5H4.1v2.3C5.6 19.1 8.6 21 12 21z"/><path d="M7.2 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.7H4.1A9 9 0 003 12c0 1.5.3 2.8.9 4l3.3-2z"/><path d="M12 5.3c1.2 0 2.3.4 3.2 1.3l2.4-2.4C16.4 2.8 14.4 2 12 2 8.6 2 5.6 3.9 4.1 6.7l3.1 2.4C7.9 6.8 9.8 5.3 12 5.3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Website Links -->
+      <div class="footer-col">
+        <h4>Website</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services Links -->
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="cleaning-and-prevention.html">Preventive Dentistry</a></li>
+          <li><a href="cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+          <li><a href="restorative-dentistry.html">Restorative Dentistry</a></li>
+          <li><a href="dental-implants.html">Dental Implants</a></li>
+          <li><a href="invisalign.html">Invisalign®</a></li>
+          <li><a href="oral-surgery.html">Oral Surgery</a></li>
+          <li><a href="dentures.html">Dentures</a></li>
+          <li><a href="pediatric-dentistry.html">Children's Dental</a></li>
+          <li><a href="services.html#children">Children's Dental</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-info">
+          <a href="tel:7249424500">724-942-4500</a>
+          <a href="https://maps.app.goo.gl/44t8cNcs267HqmYa7" target="_blank" rel="noopener">
+            4198 Washington Rd, Suite #4<br>McMurray, PA 15317
+          </a>
+        </div>
+        <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-accent footer-appt-btn">Request Appointment</a>
+      </div>
+
+    </div><!-- /footer-main -->
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> McMurray Dental Care. All rights reserved.</p>
+      <p>4198 Washington Rd #4, McMurray, PA 15317 &nbsp;·&nbsp; 724-942-4500</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
