@@ -1,3 +1,5 @@
+// TODO: Add a proper form submission handler with server-side processing and validation to the office email
+
 /* =====================================================
    McMurray Dental Care — Main JavaScript
    ===================================================== */
