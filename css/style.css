@@ -941,7 +941,8 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
 
 @media (max-width: 900px) {
   .nav-menu,
-  .nav-actions .btn    { display: none; }
+  .nav-actions .btn,
+  .nav-phone           { display: none; }
   .nav-hamburger       { display: flex; }
 }
 
