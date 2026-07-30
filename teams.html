@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | McMurray Dental Care</title>
+  <meta name="description" content="Meet the team at McMurray Dental Care. See our staff group photo first, followed by doctor and team profile cards." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="McMurray Dental Care — home">
+        <div class="nav-logo-icon">
+          <svg viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="fill:#fff;">
+            <path d="M443.98 96.25c-11.01-45.22-47.11-82.06-92.01-93.72-32.19-8.36-63 5.1-89.14 24.33-3.25 2.39-6.96 3.73-10.5 5.48l28.32 18.21c7.42 4.77 9.58 14.67 4.8 22.11-4.46 6.95-14.27 9.86-22.11 4.8L162.83 12.84c-20.7-10.85-43.38-16.4-66.81-10.31-44.9 11.67-81 48.5-92.01 93.72-10.13 41.62-.42 80.81 21.5 110.43 23.36 31.57 32.68 68.66 36.29 107.35 4.4 47.16 10.33 94.16 20.94 140.32l7.8 33.95c3.19 13.87 15.49 23.7 29.67 23.7 13.97 0 26.15-9.55 29.54-23.16l34.47-138.42c4.56-18.32 20.96-31.16 39.76-31.16s35.2 12.85 39.76 31.16l34.47 138.42c3.39 13.61 15.57 23.16 29.54 23.16 14.18 0 26.48-9.83 29.67-23.7l7.8-33.95c10.61-46.15 16.53-93.16 20.94-140.32 3.61-38.7 12.93-75.78 36.29-107.35 21.95-29.61 31.66-68.8 21.53-110.43z"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="name">McMurray Dental</span>
+          <span class="tagline">Care · McMurray, PA</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="teams.html" class="active">Team</a>
+        <a href="view-our-office.html">View Our Office</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:7249424500" class="nav-phone">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.06 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.16a16 16 0 006.93 6.93l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          724-942-4500
+        </a>
+        <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-dark">Request Appointment</a>
+      </div>
+
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="teams.html">Team</a>
+      <a href="view-our-office.html">View Our Office</a>
+      <a href="contact.html">Contact</a>
+      <div class="nav-mobile-cta">
+        <a href="tel:7249424500" class="btn btn-outline">📞 724-942-4500</a>
+        <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-dark">Request Appointment</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <p class="tag">Meet The Team</p>
+    <h1>Our People, Your <em>Smile Team</em></h1>
+    <p>Every team member has a role in making your visit calm, comfortable, and personalized.</p>
+  </section>
+
+  <!-- ===== TEAM PROFILES ===== -->
+  <section class="team-profiles-section" aria-labelledby="team-profiles-heading">
+    <div class="team-profiles-inner">
+      <div class="team-profiles-intro fade-up">
+        <h2 id="team-profiles-heading">Team Cards</h2>
+        <p>Here is our full staff profile gallery. As requested, the staff group picture is first, followed by doctor and team member cards.</p>
+      </div>
+
+      <div class="profile-grid">
+        <article class="profile-card profile-card--wide fade-up">
+          <img class="profile-image" src="images/team-pics/staff%20group.jpg" alt="McMurray Dental Care full staff group photo" loading="eager" />
+          <div class="profile-card-body">
+            <p class="profile-role">Staff Group</p>
+            <h3 class="profile-name">McMurray Dental Care Team</h3>
+            <p>Our front desk, hygienists, assistants, and providers work together to create a smooth and friendly patient experience from check-in to checkout.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%20000000010.jpg" alt="Lead doctor at McMurray Dental Care" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Doctor</p>
+            <h3 class="profile-name">Lead Dentist</h3>
+            <p>Provides comprehensive exams, treatment planning, and restorative care with a focus on patient comfort and long-term oral health.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000002.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Clinical Team</p>
+            <h3 class="profile-name">Dental Hygienist</h3>
+            <p>Helps patients maintain healthy gums and teeth through preventive cleanings, oral hygiene coaching, and early screening support.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000003.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Clinical Team</p>
+            <h3 class="profile-name">Dental Assistant</h3>
+            <p>Supports chairside treatment, sterilization protocols, and patient preparation so each procedure is efficient, safe, and reassuring.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000004.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Patient Care</p>
+            <h3 class="profile-name">Front Office Coordinator</h3>
+            <p>Helps with scheduling, insurance guidance, and visit coordination so patients feel supported before, during, and after appointments.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000005.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Clinical Team</p>
+            <h3 class="profile-name">Dental Hygienist</h3>
+            <p>Delivers gentle preventive care and educates patients on at-home habits that keep smiles healthy between regular checkups.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000006.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Clinical Team</p>
+            <h3 class="profile-name">Dental Assistant</h3>
+            <p>Assists with digital imaging, procedure setup, and patient communication to ensure each treatment visit runs smoothly.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000007.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Patient Care</p>
+            <h3 class="profile-name">Patient Relations Coordinator</h3>
+            <p>Welcomes patients, answers questions, and helps each family feel informed and confident throughout their dental care journey.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000008.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Clinical Team</p>
+            <h3 class="profile-name">Expanded Function Assistant</h3>
+            <p>Supports restorative workflows and patient comfort, helping deliver quality care with attention to detail and consistency.</p>
+          </div>
+        </article>
+
+        <article class="profile-card fade-up">
+          <img class="profile-image" src="images/team-pics/dental%20portraits%20+%20others%20-%2000000009.jpg" alt="Dental team member profile" loading="lazy" />
+          <div class="profile-card-body">
+            <p class="profile-role">Clinical Team</p>
+            <h3 class="profile-name">Dental Hygienist</h3>
+            <p>Focuses on preventive education, periodontal health, and personalized recommendations that keep every smile on track.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner" aria-labelledby="team-cta-heading">
+    <h2 id="team-cta-heading" class="fade-up">Ready To Meet Us In Person?</h2>
+    <p class="fade-up">Schedule your visit and experience our team-first approach to patient care.</p>
+    <div class="cta-actions fade-up">
+      <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-accent">Book Appointment</a>
+      <a href="contact.html" class="btn btn-light">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="f-logo">
+          <div class="f-logo-icon">
+            <svg viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="fill:#2a2a2a;">
+              <path d="M443.98 96.25c-11.01-45.22-47.11-82.06-92.01-93.72-32.19-8.36-63 5.1-89.14 24.33-3.25 2.39-6.96 3.73-10.5 5.48l28.32 18.21c7.42 4.77 9.58 14.67 4.8 22.11-4.46 6.95-14.27 9.86-22.11 4.8L162.83 12.84c-20.7-10.85-43.38-16.4-66.81-10.31-44.9 11.67-81 48.5-92.01 93.72-10.13 41.62-.42 80.81 21.5 110.43 23.36 31.57 32.68 68.66 36.29 107.35 4.4 47.16 10.33 94.16 20.94 140.32l7.8 33.95c3.19 13.87 15.49 23.7 29.67 23.7 13.97 0 26.15-9.55 29.54-23.16l34.47-138.42c4.56-18.32 20.96-31.16 39.76-31.16s35.2 12.85 39.76 31.16l34.47 138.42c3.39 13.61 15.57 23.16 29.54 23.16 14.18 0 26.48-9.83 29.67-23.7l7.8-33.95c10.61-46.15 16.53-93.16 20.94-140.32 3.61-38.7 12.93-75.78 36.29-107.35 21.95-29.61 31.66-68.8 21.53-110.43z"/>
+            </svg>
+          </div>
+          <div class="f-logo-text"><span class="name">McMurray Dental</span><span class="care">Care</span></div>
+        </div>
+        <p>Compassionate, comprehensive dental care for the whole family in McMurray, PA.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Website</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="teams.html">Team</a></li>
+          <li><a href="view-our-office.html">View Our Office</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="cleaning-and-prevention.html">Preventive Dentistry</a></li>
+          <li><a href="cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+          <li><a href="restorative-dentistry.html">Restorative Dentistry</a></li>
+          <li><a href="dental-implants.html">Dental Implants</a></li>
+          <li><a href="invisalign.html">Invisalign®</a></li>
+          <li><a href="oral-surgery.html">Oral Surgery</a></li>
+          <li><a href="dentures.html">Dentures</a></li>
+          <li><a href="pediatric-dentistry.html">Children's Dental</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-info">
+          <a href="tel:7249424500">724-942-4500</a>
+          <a href="https://maps.app.goo.gl/44t8cNcs267HqmYa7" target="_blank" rel="noopener">4198 Washington Rd, Suite #4<br>McMurray, PA 15317</a>
+        </div>
+        <a href="https://appt.link/mc-murray-dental-care/mc-murray-dental-care" target="_blank" rel="noopener" class="btn btn-accent footer-appt-btn">Request Appointment</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> McMurray Dental Care. All rights reserved.</p>
+      <p>4198 Washington Rd #4, McMurray, PA 15317 &nbsp;·&nbsp; 724-942-4500</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -500,6 +500,157 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
 .team-card .role { font-size: .95rem; color: var(--muted); }
 
 /* =====================================================
+   TEAM PROFILES PAGE
+   ===================================================== */
+.team-profiles-section {
+  padding: 5rem 2rem 6rem;
+  background: var(--bg);
+}
+
+.team-profiles-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.team-profiles-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.75rem;
+}
+
+.team-profiles-intro h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: .8rem;
+}
+
+.team-profiles-intro p {
+  color: var(--muted);
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.profile-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--t);
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.profile-card--wide {
+  grid-column: span 3;
+}
+
+.profile-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.profile-card-body {
+  padding: 1.2rem 1.2rem 1.35rem;
+}
+
+.profile-role {
+  font-size: .83rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .4rem;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  margin-bottom: .45rem;
+}
+
+.profile-card-body p {
+  font-size: .96rem;
+  color: var(--text);
+  line-height: 1.72;
+}
+
+/* =====================================================
+   OFFICE GALLERY PAGE
+   ===================================================== */
+.office-gallery-section {
+  padding: 5rem 2rem 6rem;
+  background: var(--bg-light);
+}
+
+.office-gallery-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.office-gallery-intro {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 2.8rem;
+}
+
+.office-gallery-intro h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  margin-bottom: .75rem;
+}
+
+.office-gallery-intro p {
+  color: var(--muted);
+}
+
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.office-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--t);
+}
+
+.office-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.office-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.office-card-body {
+  padding: 1.1rem 1.2rem 1.35rem;
+}
+
+.office-card-title {
+  font-size: 1.12rem;
+  margin-bottom: .35rem;
+}
+
+.office-card-body p {
+  font-size: .95rem;
+  line-height: 1.68;
+  color: var(--text);
+}
+
+/* =====================================================
    SERVICES PAGE
    ===================================================== */
 .services-list { padding: 4rem 2rem 6rem; max-width: 1100px; margin: 0 auto; }
@@ -779,6 +930,9 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
   .values-grid        { grid-template-columns: 1fr 1fr; }
   .team-grid          { grid-template-columns: 1fr 1fr; }
   .footer-main        { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+  .profile-grid       { grid-template-columns: 1fr 1fr; }
+  .profile-card--wide { grid-column: span 2; }
+  .office-grid        { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -832,6 +986,11 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
   .team-section        { padding: 4rem 1.5rem; }
   .values-grid         { grid-template-columns: 1fr; }
   .team-grid           { grid-template-columns: 1fr 1fr; }
+  .profile-grid        { grid-template-columns: 1fr; }
+  .profile-card--wide  { grid-column: span 1; }
+  .team-profiles-section,
+  .office-gallery-section { padding: 4rem 1.5rem; }
+  .office-grid         { grid-template-columns: 1fr; }
 
   /* Page header */
   .page-header         { padding: 7rem 1.5rem 4rem; }
