@@ -42,19 +42,43 @@ if (hamburger && mobileNav) {
   });
 }
 
-/* === FADE-UP SCROLL ANIMATIONS === */
-const fadeEls = document.querySelectorAll('.fade-up');
-if (fadeEls.length) {
+/* === SCROLL PROGRESS BAR === */
+let progressBar = document.querySelector('.scroll-progress');
+if (!progressBar) {
+  progressBar = document.createElement('div');
+  progressBar.className = 'scroll-progress';
+  progressBar.setAttribute('aria-hidden', 'true');
+  document.body.insertBefore(progressBar, document.body.firstChild);
+}
+if (progressBar) {
+  const update = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    progressBar.style.transform = `scaleX(${max > 0 ? (h.scrollTop / max) : 0})`;
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}
+
+/* === SCROLL REVEAL ANIMATIONS === */
+const revealEls = document.querySelectorAll('[data-reveal], .fade-up');
+if (revealEls.length) {
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
-        e.target.classList.add('in-view');
-        io.unobserve(e.target);
+        const el = e.target;
+        const delay = el.getAttribute('data-delay');
+        if (delay) {
+          setTimeout(() => el.classList.add('in-view'), parseInt(delay, 10) || 0);
+        } else {
+          el.classList.add('in-view');
+        }
+        io.unobserve(el);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  fadeEls.forEach(el => io.observe(el));
+  revealEls.forEach(el => io.observe(el));
 }
 
 /* === CONTACT FORM === */
