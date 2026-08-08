@@ -1,5 +1,3 @@
-// TODO: Add a proper form submission handler with server-side processing and validation to the office email
-
 /* =====================================================
    McMurray Dental Care — Main JavaScript
    ===================================================== */
@@ -84,29 +82,48 @@ if (revealEls.length) {
 /* === CONTACT FORM === */
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const btn          = contactForm.querySelector('[type="submit"]');
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    const btn = contactForm.querySelector('[type="submit"]');
+    if (!btn) return;
+
     const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
 
-    btn.textContent = 'Sending…';
-    btn.disabled    = true;
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' }
+      });
 
-    // Simulate async send (replace with real endpoint)
-    setTimeout(() => {
-      btn.textContent      = '✓ Message Sent!';
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+
+      btn.textContent = 'Message Sent!';
       btn.style.background = '#4caf50';
       btn.style.borderColor = '#4caf50';
-
+      contactForm.reset();
+    } catch (err) {
+      btn.textContent = 'Try Again';
+      btn.style.background = '#b42318';
+      btn.style.borderColor = '#b42318';
+    } finally {
       setTimeout(() => {
-        btn.textContent   = originalText;
-        btn.disabled      = false;
+        btn.textContent = originalText;
+        btn.disabled = false;
         btn.style.background = '';
         btn.style.borderColor = '';
-        contactForm.reset();
       }, 3500);
-    }, 1400);
+    }
   });
 }
 
