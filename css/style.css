@@ -467,7 +467,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
   max-height: 0; overflow: hidden; opacity: 0;
   transition: max-height .55s cubic-bezier(.4,0,.2,1), opacity .55s cubic-bezier(.4,0,.2,1), margin-top .55s cubic-bezier(.4,0,.2,1);
 }
-.srv-card:hover .srv-desc { max-height: 160px; opacity: 1; margin-top: 12px; }
+.srv-card:hover .srv-desc { max-height: 400px; opacity: 1; margin-top: 12px; }
 
 .srv-link {
   display: inline-block;
