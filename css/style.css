@@ -33,10 +33,13 @@
 
 /* === RESET === */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html  { scroll-behavior: smooth; }
+html  {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
 body  {
   font-family: var(--font-b);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.65;
   color: var(--text);
   background:
@@ -50,7 +53,7 @@ body  {
 img  { max-width: 100%; height: auto; display: block; }
 a    { text-decoration: none; color: inherit; }
 ul   { list-style: none; }
-p { font-size: 1.2rem !important; }
+p { font-size: 1.3rem !important; }
 h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15; color: var(--dark); }
 
 /* === UTILITIES === */
@@ -124,6 +127,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
   font-family: var(--font-h);
   font-size: 1rem; font-weight: 700;
   color: var(--dark); line-height: 1.1;
+  white-space: nowrap;
 }
 .nav-logo-text .tagline {
   display: block;
@@ -1384,6 +1388,8 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
 }
 
 @media (max-width: 768px) {
+  html { font-size: 16px; }
+
   /* Hero */
   .hero                { grid-template-columns: 1fr; }
   .hero-right          { order: -1; height: 55vw; min-height: 280px; max-height: 420px; }
@@ -1458,7 +1464,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
 }
 
 @media (max-width: 480px) {
-  p { font-size: clamp(1rem, 4vw, 1.2rem) !important; }
+  p { font-size: clamp(1.08rem, 4.3vw, 1.3rem) !important; }
   .btn { white-space: normal; font-size: .9rem; padding: .7rem 1.2rem; }
   .hero-actions        { flex-direction: column; gap: .75rem; }
   .hero-actions .btn   { width: 100%; }
