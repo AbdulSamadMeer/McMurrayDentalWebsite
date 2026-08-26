@@ -922,13 +922,53 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
 /* =====================================================
    OFFICE GALLERY PAGE
    ===================================================== */
+.office-video-section {
+  padding: 2.5rem 2rem 1.5rem;
+  background: var(--bg-light);
+}
+
+.office-video-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.office-video-intro {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 1.4rem;
+}
+
+.office-video-intro h2 {
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  margin-bottom: .6rem;
+}
+
+.office-video-intro p {
+  color: var(--muted);
+}
+
+.office-video-wrap {
+  background: linear-gradient(180deg, var(--surface) 0%, var(--surface-alt) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 16px 34px rgba(46,42,32,.16);
+}
+
+.office-tour-video {
+  width: 100%;
+  max-height: 78vh;
+  display: block;
+  background: #000;
+}
+
 .office-gallery-section {
-  padding: 5rem 2rem 6rem;
+  padding: 3.5rem 2rem 6rem;
   background: var(--bg-light);
 }
 
 .office-gallery-inner {
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -949,8 +989,8 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
 
 .office-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.8rem;
 }
 
 .office-card {
@@ -969,22 +1009,23 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
 
 .office-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+  display: block;
 }
 
 .office-card-body {
-  padding: 1.1rem 1.2rem 1.35rem;
+  padding: 1.25rem 1.3rem 1.45rem;
 }
 
 .office-card-title {
-  font-size: 1.12rem;
-  margin-bottom: .35rem;
+  font-size: 1.2rem;
+  margin-bottom: .45rem;
 }
 
 .office-card-body p {
-  font-size: .95rem;
-  line-height: 1.68;
+  font-size: 1rem;
+  line-height: 1.72;
   color: var(--text);
 }
 
@@ -1393,6 +1434,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
   .profile-grid       { grid-template-columns: 1fr 1fr; }
   .profile-card--wide { grid-column: span 2; }
   .office-grid        { grid-template-columns: 1fr 1fr; }
+  .office-video-section { padding: 2rem 1.5rem 1rem; }
 }
 
 @media (max-width: 900px) {
@@ -1471,6 +1513,9 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
   }
   .team-profiles-section,
   .office-gallery-section { padding: 4rem 1.5rem; }
+  .office-video-section { padding: 1.5rem 1.5rem .75rem; }
+  .office-video-intro { margin-bottom: 1rem; }
+  .office-tour-video { max-height: none; }
   .office-grid         { grid-template-columns: 1fr; }
 
   /* Page header */
