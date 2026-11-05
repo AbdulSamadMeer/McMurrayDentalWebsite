@@ -317,7 +317,7 @@ h1,h2,h3,h4,h5 { font-family: var(--font-h); font-weight: 700; line-height: 1.15
    WHY CHOOSE US
    ===================================================== */
 .why-us {
-  padding: 6rem 1erem;
+  padding: 6rem 1rem;
   background:
     radial-gradient(circle at 85% 18%, rgba(200,213,102,.18) 0%, rgba(200,213,102,0) 42%),
     var(--bg-light);
